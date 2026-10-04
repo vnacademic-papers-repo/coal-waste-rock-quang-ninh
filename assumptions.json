@@ -1,0 +1,50 @@
+{
+  "n": 100000,
+  "seed": 20261003,
+  "numpy": "2.3.5",
+  "site_context": "Mong Duong Mine, Quang Ninh; site-specific context/data are identified by the authors as recorded at the mine.",
+  "site_record_provenance": "Raw mine records are not included; authors should document record identifier, date/period, method, units, and responsible source before publication.",
+  "interpretation": "Outputs are model-derived. Monte Carlo distributions are analyst-selected uncertainty scenarios, not observed mine-data distributions.",
+  "distribution_status": "Analyst-selected epistemic scenarios; NOT fitted to observed data or elicited from experts.",
+  "ranges_low_mode_high": {
+    "y": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "P": [
+      90000,
+      100000,
+      110000
+    ],
+    "proc": [
+      25000,
+      32000,
+      40000
+    ],
+    "qa": [
+      2000,
+      3000,
+      4000
+    ],
+    "I": [
+      1500000000.0,
+      2000000000.0,
+      3000000000.0
+    ]
+  },
+  "held_fixed": {
+    "Q": 100000,
+    "T": 10,
+    "rf": 0.1,
+    "residual": 10000,
+    "density_ratios_gp_gr": 1,
+    "haul_multiplier": 1,
+    "extra_unmodelled_cost": 0
+  },
+  "scope": "One independent project draw, held constant in real terms for 10 years. Routes 3,5,7.5 km analysed separately.",
+  "price_basis": "P is hypothetical DELIVERED revenue, NOT the observed ex-gate price cited in manuscript.",
+  "capital": "Hired machinery; I is site preparation/mobilisation, excludes purchase of shift-costed equipment.",
+  "volume": "y is mass recovery; gp=rho_input/rho_product; gr=rho_input/rho_residual. Equal-density base is unverified.",
+  "dependence": "Gaussian copula normal-latent rho=-0.6,+0.6 for y/proc; not claimed as observed Spearman/Pearson correlation."
+}
